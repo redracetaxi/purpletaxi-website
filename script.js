@@ -218,7 +218,7 @@ if (bookingDate || bookingTime) {
 
   
 const API_URL =
-  "http://redracetaxi-backend.onrender.com/api/bookings";
+  "https://purpletaxi-backend.onrender.com/api/bookings";
 
   const whatsappNumber = "917871483345";
 
