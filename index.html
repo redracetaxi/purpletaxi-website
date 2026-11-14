@@ -1,0 +1,781 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PurpleTaxi  | Premium Taxi Service</title>
+
+    <meta
+        name="description"
+        content="Request a taxi in Coimbatore for local travel, airport transfers and outstation journeys."
+    >
+
+    <meta name="theme-color" content="#700c0c">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="announcement-bar">
+        <p>PREMIUM TRAVEL, PERSONALISED FOR YOU</p>
+        <a href="tel:+917871483345">Call: +91 78714 83345</a>
+    </div>
+
+    <!-- NAVIGATION -->
+    <header class="site-header" id="siteHeader">
+        <nav class="navbar container" aria-label="Main navigation">
+
+           <a href="#home" class="brand">
+    <img
+        src="images/PurpleTaxiLogo.png"
+        alt="PurpleTaxi Service"
+        class="header-logo"
+    >
+</a>
+            <button
+                type="button"
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation"
+                aria-controls="navMenu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Experiences</a></li>
+                <li><a href="#fleet">Our Fleet</a></li>
+                <li><a href="#about">Our Story</a></li>
+            </ul>
+
+            <a href="#booking" class="nav-button">Plan Your Ride ↗</a>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero-section" id="home">
+
+            <div class="hero-background" aria-hidden="true"></div>
+            
+
+
+            <div class="container hero-layout">
+
+                <div class="hero-content reveal">
+                    
+                    <span class="eyebrow">
+                        THE PREMIUM WAY TO TRAVEL
+                    </span>
+
+                    <h1>
+                        Taxi Service in Coimbatore
+                    </h1>
+
+                    <p class="hero-description">
+                        From everyday city journeys to memorable
+                        outstation escapes, travel with comfort,
+                        convenience and a service designed around you.
+                    </p>
+
+                   <div class="hero-actions">
+
+    <a href="tel:+917871483345" class="button button-primary hero-call-button">
+        ☎ Call Now +91 7871483345
+    </a>
+     <a href="#booking" class="button button-book">
+        BOOK NOW
+    </a>
+
+</div>
+    
+</div>
+            </div>
+            </div>
+        </div>
+
+        </section>
+         <!-- BOOKING FORM -->
+        <section class="booking-section section-padding" id="booking">
+
+            <div class="container booking-layout">
+
+                <div class="booking-copy reveal">
+
+                    <span class="eyebrow">YOUR NEXT JOURNEY BEGINS HERE</span>
+
+                    <h2>
+                        Let's Get<br>
+                        <span>You Moving.</span>
+                    </h2>
+
+                    <p>
+                        Tell us about your trip. Submit your
+                        requirements to request a taxi reservation.
+                    </p>
+
+                    <div class="direct-contact">
+                        <span class="direct-contact-icon">☎</span>
+                        <div>
+                            <small>CALL US DIRECTLY</small>
+                            <a href="tel:+917871483345">+91 78714 83345</a>
+                        </div>
+                    </div>
+
+                    <div class="direct-contact">
+                        <span class="direct-contact-icon">↗</span>
+                        <div>
+                            <small>CHAT WITH US</small>
+                            <a
+                                href="https://wa.me/917871483345"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Open WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="booking-panel reveal">
+
+                    <div class="booking-panel-heading">
+                        <span class="eyebrow">RESERVATION REQUEST</span>
+                        <h3>Book Your Taxi Now</h3>
+                        <p>Fields marked * are required.</p>
+                    </div>
+
+                    <form id="bookingForm" action="#" method="post">
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+                                <label for="customerName">Full Name *</label>
+                                <input
+                                    type="text"
+                                    id="customerName"
+                                    name="name"
+                                    placeholder="Your name"
+                                    autocomplete="name"
+                                    maxlength="100"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="customerPhone">Phone Number *</label>
+                                <input
+                                    type="tel"
+                                    id="customerPhone"
+                                    name="phone"
+                                    placeholder="Your phone number"
+                                    autocomplete="tel"
+                                    maxlength="20"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="pickupLocation">Pickup Location *</label>
+                                <input
+                                    type="text"
+                                    id="pickupLocation"
+                                    name="pickup"
+                                    placeholder="Where should we pick you up?"
+                                    maxlength="250"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="dropLocation">Destination *</label>
+                                <input
+                                    type="text"
+                                    id="dropLocation"
+                                    name="drop"
+                                    placeholder="Where would you like to go?"
+                                    maxlength="250"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="travelDate">Travel Date *</label>
+                                <input
+                                    type="date"
+                                    id="travelDate"
+                                    name="date"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="travelTime">Pickup Time *</label>
+                                <input
+                                    type="time"
+                                    id="travelTime"
+                                    name="time"
+                                    required
+                                >
+                            </div>
+
+                        
+                        </div>
+
+                        <button type="submit" class="button button-primary submit-button">
+                            Submit Booking Request ↗
+                        </button>
+
+                        <p
+                            id="bookingMessage"
+                            class="booking-message"
+                            role="status"
+                            aria-live="polite"
+                        ></p>
+
+                        <p class="booking-disclaimer">
+                            Your booking is not confirmed until
+                            the service provider accepts your request.
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+       
+
+
+        <!-- QUICK BENEFITS -->
+        <section class="benefits-section" id="experience">
+            <div class="container benefits-grid">
+
+                <article class="benefit-item reveal">
+                    <span class="benefit-icon">✳</span>
+                    <h3>Simple Reservations</h3>
+                    <p>Share your travel details in a few steps.</p>
+                </article>
+
+                <article class="benefit-item reveal">
+                    <span class="benefit-icon">◇</span>
+                    <h3>Flexible Journeys</h3>
+                    <p>Request local, airport and outstation travel.</p>
+                </article>
+
+                <article class="benefit-item reveal">
+                    <span class="benefit-icon">↗</span>
+                    <h3>Direct Assistance</h3>
+                    <p>Contact the service to discuss your booking.</p>
+                </article>
+
+                <article class="benefit-item reveal">
+                    <span class="benefit-icon">◎</span>
+                    <h3>Vehicle Choices</h3>
+                    <p>Choose a category that suits your requirements.</p>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- SERVICES -->
+        <section class="services-section section-padding" id="services">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="eyebrow">TRAVEL WITHOUT LIMITS</span>
+                    <h2>One Service.<br><span>Many Possibilities.</span></h2>
+                    <p>
+                        Choose the journey you have in mind.
+                        We make it easy to send your request.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+
+                    <article class="service-card reveal">
+                        <span class="service-number">01 / CITY</span>
+                        <div class="service-icon">⌖</div>
+                        <h3>Local Taxi</h3>
+                        <p>
+                            For shopping, appointments, business
+                            meetings and everyday city travel.
+                        </p>
+                        <a href="#booking" data-trip="Local">
+                            Plan local travel <span>↗</span>
+                        </a>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <span class="service-number">02 / AIRPORT</span>
+                        <div class="service-icon">✈</div>
+                        <h3>Airport Transfers</h3>
+                        <p>
+                            Request a pickup or drop-off for
+                            your planned airport journey.
+                        </p>
+                        <a href="#booking" data-trip="Airport">
+                            Plan airport travel <span>↗</span>
+                        </a>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <span class="service-number">03 / OUTSTATION</span>
+                        <div class="service-icon">⇢</div>
+                        <h3>Outstation Trips</h3>
+                        <p>
+                            Plan intercity journeys, sightseeing
+                            trips and longer-distance travel.
+                        </p>
+                        <a href="#booking" data-trip="Outstation">
+                            Explore destinations <span>↗</span>
+                        </a>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <span class="service-number">04 / RETURN</span>
+                        <div class="service-icon">⟲</div>
+                        <h3>Round Trips</h3>
+                        <p>
+                            Request a return journey that matches
+                            your travel schedule.
+                        </p>
+                        <a href="#booking" data-trip="Round Trip">
+                            Plan a round trip <span>↗</span>
+                        </a>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- FLEET -->
+        <section class="fleet-section section-padding" id="fleet">
+
+            <div class="container">
+
+                <div class="fleet-heading reveal">
+                    <div>
+                        <span class="eyebrow">THE VEHICLE COLLECTION</span>
+                        <h2>Find Your <span>Kind of Comfort.</span></h2>
+                    </div>
+
+                    <p>
+                        Select a vehicle category according to
+                        your travel needs and group size.
+                    </p>
+                </div>
+
+                <div class="fleet-grid">
+
+                    <article class="fleet-card reveal">
+                        <div class="fleet-image">
+                            <img
+                                src="images/dzi1.png"
+                                alt="Sedan vehicle category"
+                                loading="lazy"
+                            >
+                            <span class="fleet-label">EVERYDAY COMFORT</span>
+                        </div>
+
+                        <div class="fleet-content">
+                            <span class="fleet-number">01</span>
+                            <h3>SEDAN</h3>
+                            <p>
+                                A comfortable category for daily
+                                travel and longer journeys.
+                            </p>
+                            <a href="#booking" data-vehicle="Sedan">
+                                Choose SEDAN ↗
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="fleet-card reveal">
+                        <div class="fleet-image">
+                            <img
+                                src="images/ciaz.jpeg"
+                                alt="Sedan prime vehicle category"
+                                loading="lazy"
+                            >
+                            <span class="fleet-label">EXTRA SPACE</span>
+                        </div>
+
+                        <div class="fleet-content">
+                            <span class="fleet-number">02</span>
+                            <h3>SEDAN PRIME PLUS</h3>
+                            <p>
+                                A spacious category for family
+                                journeys and group travel.
+                            </p>
+                            <a href="#booking" data-vehicle="Sedan prime plus">
+                                Choose SEDAN PRIME PLUS ↗
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="fleet-card reveal">
+                        <div class="fleet-image">
+                            <img
+                                src="images/rumion.jpeg"
+                                alt="Premium car for a special journey"
+                                loading="lazy"
+                            >
+                            <span class="fleet-label">PREMIUM TRAVEL</span>
+                        </div>
+
+                        <div class="fleet-content">
+                            <span class="fleet-number">03</span>
+                            <h3>SUV</h3>
+                            <p>
+                                Request a premium vehicle for
+                                your particular travel needs.
+                            </p>
+                            <a href="#booking" data-vehicle="SUV">
+                                Choose SUV ↗
+                            </a>
+                        </div>
+                    </article>
+                    <article class="fleet-card reveal">
+                        <div class="fleet-image">
+                            <img
+                                src="images/innova.png"
+                                alt="SUV vehicle category"
+                                loading="lazy"
+                            >
+                            <span class="fleet-label">EXTRA SPACE</span>
+                        </div>
+
+                        <div class="fleet-content">
+                            <span class="fleet-number">04</span>
+                            <h3>SUV PRIME PLUS</h3>
+                            <p>
+                                A spacious category for family
+                                journeys and group travel.
+                            </p>
+                            <a href="#booking" data-vehicle="SUV PRIME PLUS">
+                                Choose SUV PRIME PLUS ↗
+                            </a>
+                        </div>
+                    </article>
+                     <article class="fleet-card reveal">
+                        <div class="fleet-image">
+                            <img
+                                src="images/tempo.jpeg"
+                                alt="Tempo Traveller vehicle category"
+                                loading="lazy"
+                            >
+                            <span class="fleet-label">EXTRA SPACE</span>
+                        </div>
+
+                        <div class="fleet-content">
+                            <span class="fleet-number">05</span>
+                            <h3>TEMPO TRAVELLER</h3>
+                            <p>
+                                A spacious category for family
+                                journeys and group travel.
+                            </p>
+                            <a href="#booking" data-vehicle="TEMPO TRAVELLER">
+                                Choose TEMPO TRAVELLER ↗
+                            </a>
+                        </div>
+                    </article>
+
+
+
+                </div>
+
+                <p class="fleet-note">
+                    Vehicle availability and pricing must be
+                    confirmed with the service provider.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- JOURNEY GRAPHICAL VISUALIZATION -->
+        <section class="journey-section section-padding">
+
+            <div class="container journey-layout">
+
+                <div class="journey-copy reveal">
+                    <span class="eyebrow">A CLEARER WAY TO PLAN</span>
+
+                    <h2>
+                        From Pickup<br>
+                        <span>To Destination.</span>
+                    </h2>
+
+                    <p>
+                        Share your pickup location, destination,
+                        preferred time and vehicle category.
+                        Your request can then be reviewed by
+                        the taxi service.
+                    </p>
+
+                    <a href="#booking" class="button button-primary">
+                        Start Planning ↗
+                    </a>
+                </div>
+
+
+                <div class="route-panel reveal">
+
+                    <div class="route-panel-heading">
+                        <span>YOUR JOURNEY PLANNER</span>
+                        <span class="route-status">● PLANNING</span>
+                    </div>
+
+                    <div class="route-map">
+
+                        <svg
+                            viewBox="0 0 500 280"
+                            role="img"
+                            aria-label="Illustration of a route between pickup and destination"
+                        >
+                            <g
+                                fill="none"
+                                stroke="#8DA79A"
+                                stroke-width="1.5"
+                                opacity=".45"
+                            >
+                                <path d="M0 40 L110 40 L150 90 L270 90 L320 35 L500 35"/>
+                                <path d="M0 120 L90 120 L140 160 L250 160 L320 210 L500 210"/>
+                                <path d="M0 245 L120 245 L180 205 L330 205 L390 260 L500 260"/>
+                                <path d="M70 0 L70 80 L110 120 L110 280"/>
+                                <path d="M210 0 L210 60 L250 100 L250 280"/>
+                                <path d="M370 0 L370 100 L330 140 L330 280"/>
+                                <path d="M455 0 L455 95 L420 135 L420 280"/>
+                            </g>
+
+                            <path
+                                d="M85 205 C135 205 135 110 220 125 S320 190 410 70"
+                                fill="none"
+                                stroke="#B66B43"
+                                stroke-width="4"
+                                stroke-linecap="round"
+                                stroke-dasharray="8 8"
+                                class="route-path"
+                            />
+
+                            <circle cx="85" cy="205" r="12"
+                                fill="#700c0c" stroke="#B66B43" stroke-width="4"/>
+
+                            <circle cx="410" cy="70" r="12"
+                                fill="#B66B43" stroke="#FFFFFF" stroke-width="4"/>
+
+                            <g transform="translate(195 108)">
+                                <rect width="65" height="34" rx="10" fill="#700C0c"/>
+                                <text x="32.5" y="22" text-anchor="middle"
+                                    fill="#FFFFFF" font-size="12">RIDE</text>
+                            </g>
+                        </svg>
+
+                        <div class="map-label map-pickup">
+                            <span></span>
+                            <div>
+                                <small>START</small>
+                                <strong>Pickup Location</strong>
+                            </div>
+                        </div>
+
+                        <div class="map-label map-drop">
+                            <span></span>
+                            <div>
+                                <small>FINISH</small>
+                                <strong>Destination</strong>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="route-panel-footer">
+                        <span>YOUR ROUTE, YOUR SCHEDULE</span>
+                        <a href="#booking">Enter journey details ↗</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+        <section class="about-section section-padding" id="about">
+
+            <div class="container about-layout">
+
+                <div class="about-image reveal">
+                    <img
+                        src="images/explore.png"
+                        alt="A premium travel experience"
+                        loading="lazy"
+                    >
+                    <span class="about-image-tag">
+                        YOUR JOURNEY MATTERS
+                    </span>
+                </div>
+
+                <div class="about-content reveal">
+
+                    <span class="eyebrow">A SERVICE BUILT AROUND YOU</span>
+
+                    <h2>
+                        Every Journey<br>
+                        <span>Deserves Care.</span>
+                    </h2>
+
+                    <p>
+                        Purple Taxi Service provides a convenient
+                        way to request transportation for local
+                        journeys, airport transfers and outstation trips.
+                    </p>
+
+                    <p>
+                        Use our booking form to share your travel
+                        requirements or contact us directly to
+                        discuss your journey.
+                    </p>
+
+                    <div class="about-points">
+                        <div><span>✓</span> Easy booking enquiries</div>
+                        <div><span>✓</span> Multiple journey categories</div>
+                        <div><span>✓</span> Direct phone and WhatsApp contact</div>
+                    </div>
+
+                    <a href="#booking" class="button button-primary">
+                        Plan Your Ride ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+       
+
+        
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="container footer-main">
+
+           <a href="#home" class="brand">
+        <span class="brand-symbol">P</span>
+
+        <span class="brand-name">
+            <strong>PURPLE</strong>
+            <small>TAXI SERVICE</small>
+        </span>
+    </a>
+                <p>
+                    A convenient way to plan your next journey.
+                    Your destination, your schedule.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>EXPLORE</h3>
+                <a href="#home">Home</a>
+                <a href="#services">Experiences</a>
+                <a href="#fleet">Our Fleet</a>
+                <a href="#about">Our Story</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>OUR SERVICES</h3>
+                <a href="#booking" data-trip="Local">Local Taxi</a>
+                <a href="#booking" data-trip="Airport">Airport Transfers</a>
+                <a href="#booking" data-trip="Outstation">Outstation Trips</a>
+                <a href="#booking" data-trip="Round Trip">Round Trips</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>CONTACT</h3>
+                <a href="tel:+917871483345">+91 78714 83345</a>
+                <a
+                    href="https://wa.me/917871483345"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    WhatsApp Us
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=purpletaxi2026@gmail.com"
+   class="footer-contact-link"
+   target="_blank"
+   rel="noopener noreferrer">
+
+    <i class="fa-regular fa-envelope"></i>
+    purpletaxi2026@gmail.com
+
+</a>
+                <a href="#booking">Request a Booking</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p>
+                    &copy; <span id="currentYear">2026</span>
+                    PurpleTaxi Service. All rights reserved.
+                </p>
+
+                <a href="#home">Back to top ↑</a>
+            </div>
+        </div>
+
+    </footer>
+
+
+   <!-- MOBILE FIXED ACTION BAR -->
+<!-- FIXED CALL + WHATSAPP BUTTONS -->
+<div class="floating-contact-buttons">
+
+    <!-- WhatsApp -->
+   <a href="https://wa.me/917871483345"
+   class="floating-contact whatsapp"
+   aria-label="Chat on WhatsApp"
+   target="_blank"
+   rel="noopener">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+</a>
+    <!-- Call -->
+    <a
+        href="tel:+917871483345"
+        class="floating-contact call"
+        aria-label="Call PurpleTaxi"
+    >
+        <span class="floating-icon">☎</span>
+    </a>
+
+</div>
+</body>
+</html>
